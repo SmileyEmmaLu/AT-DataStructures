@@ -1,1 +1,1 @@
-Please enter your favorite city here:
+
