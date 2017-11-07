@@ -12,4 +12,4 @@ Write a program that reads a given file and builds a Huffman tree for the file. 
 
 The tree looks like this:
 
-![tree](test.png)
+![tree](tree.png)
