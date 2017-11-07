@@ -16,9 +16,9 @@ The tree looks like this:
 
 # Requirements: (max B+)
 1. Create a Comparable Node subclass for Huffman encoding
-  i. contains a char and a frequency.
-  ii. isLeaf- returns true if the given node is a leaf
-  iii. compareTo- compares frequency of the nodes to determine greater than less than or equal.
+  * contains a char and a frequency.
+  * isLeaf- returns true if the given node is a leaf
+  * compareTo- compares frequency of the nodes to determine greater than less than or equal.
 2. read in a file, create a priority queue of nodes, loops through priority queue to create Huffman Tree
 3. print the tree (make a toString() that encodes the tree in 'binary' like the linked example above)
 
