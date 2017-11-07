@@ -13,3 +13,5 @@ Write a program that reads a given file and builds a Huffman tree for the file. 
 The tree looks like this:
 
 ![tree](tree.png)
+
+You should represent your tree with a toString() that returns the binary encoded string from the example link (see bottom of page).
