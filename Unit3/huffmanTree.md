@@ -23,7 +23,7 @@ The tree looks like this:
 3. print the tree (make a toString() that encodes the tree in 'binary' like the linked example above)
 
 # Challenge Options: (one = max A, two = max A+) 
-4. Print the compression rate compared to a typical 8bits per character representation of the original file.
+4. Print the compression rate compared to a typical 32bits per character representation of the original file.
 5. Make a binary encoding of the original file using the tree and save it to a new file (include the binary tree in the file as well).
 6. Make a Static method that 'unzips' a given huffman compressed file, assuming the tree is encoded properly and included in the file, then saves the uncompressed text in a file.
 
