@@ -10,7 +10,7 @@ Given a string that looks like **aaaabbbbbhhhhhttttttrrrrrr**, write a program t
 
 `aaaabbbbbhhhhhttttttrrrrrr -> a4b5h4t6r6`
 
-### Task 3 (Challenge)- Dictionary compression
+### Task 3 (Day 2 Challenge)- Dictionary compression
 
 Given a string of text with repeating words or phrases, write a program that:
 1. Allows a user to enter a phrase to compress 
