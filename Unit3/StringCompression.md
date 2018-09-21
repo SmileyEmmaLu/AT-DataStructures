@@ -1,4 +1,4 @@
-### Lab 1
+### String Compression Intro
 
 #### Task 1 - Disemvoweling
 
