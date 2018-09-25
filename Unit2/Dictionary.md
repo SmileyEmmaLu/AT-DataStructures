@@ -27,7 +27,7 @@ boolean isEmpty()
 //returns the number of key-value pairs in the dictionary
 int size()
 
-//returns a Collection¹ of key-value pairs
+//returns a Collection¹ of keys
 Collection<E> keys()
 
 //returns a Collection of values
