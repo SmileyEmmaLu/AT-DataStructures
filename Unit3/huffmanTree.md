@@ -1,6 +1,6 @@
 ## Huffman Coding
 
-Yesterday, we talked about losslessly compressing text via Huffman coding. This technique assigns different encodings to characters based on the frequency of occurrence in a given text.
+Huffman coding is a way to losslessly compress text using variable numbers of bits. This technique assigns different encodings to characters based on the frequency of occurrence in a given text.
 
 You can find an example of this [here](https://www.siggraph.org/education/materials/HyperGraph/video/mpeg/mpegfaq/huffman_tutorial.html).
 
@@ -19,10 +19,13 @@ The tree looks like this:
    * contains a char and a frequency.
    * isLeaf- returns true if the given node is a leaf
    * compareTo- compares frequency of the nodes to determine greater than less than or equal.
-2. read in a file, create a priority queue of nodes, loops through priority queue to create Huffman Tree
-3. print the tree (make a toString() that encodes the tree in 'binary' like the linked example above)
+   * toString- useful representation of 
+2. read in text from a file-> create a sorted list of characters -> calculate frequency for each character and store it in a node-> create a priority queue of nodes (you may use a built in class for priority queue)
+3. loop through the priority queue to create Huffman Tree like in above tutorial example
+4. print the tree (make a toString() that encodes the tree in an array like the example below)
 
-# Challenge Options: (one = max A, two = max A+) 
+
+# Challenge Options: (complete one option = max A, two = max A+) 
 4. Print the compression rate compared to a typical 32bits per character representation of the original file.
 5. Make a binary encoding of the original file using the tree and save it to a new file (include the binary tree in the file as well).
 6. Make a Static method that 'unzips' a given huffman compressed file, assuming the tree is encoded properly and included in the file, then saves the uncompressed text in a file.
