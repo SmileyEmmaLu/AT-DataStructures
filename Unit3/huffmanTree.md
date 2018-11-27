@@ -24,7 +24,8 @@ The tree looks like this:
 3. loop through the priority queue to create Huffman Tree like in above tutorial example
 4. print the tree (make a toString() that encodes the tree in an array like the example below)
 ![array heap](Heap-as-array.png)
-[array heap explanation] (https://en.wikipedia.org/wiki/Binary_heap)
+
+[array heap explanation](en.wikipedia.org/wiki/Binary_heap)
 
 # Challenge Options: (complete one option = max A, two = max A+) 
 4. Print the compression rate compared to a typical 32bits per character representation of the original file.
