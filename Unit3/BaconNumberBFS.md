@@ -25,8 +25,8 @@ You will read in all actors and movies from the tsv files to populate the graphs
 You may want to calculate the last two values only once and save them in a cache (persistent data file)
 
 ## REQUIREMENTS:
-### 1. (3 pts) Download the appropriate TSV files. (Suggestion: DO NOT OPEN IN TEXT EDIT YIKES)
-### 2. (2 pts) Explore the format of the TSV files using terminal commands:
+### 1. (1 pts) Download the appropriate TSV files. (Suggestion: DO NOT OPEN IN TEXT EDIT YIKES)
+### 2. (1 pts) Explore the format of the TSV files using terminal commands:
 ```
 head -50 MYFIRSTTSV.tsv
 head -50 MYFIRSTTSV.tsv | grep -Eo "YOURREGEX"
@@ -38,11 +38,11 @@ You should answer the following questions to figure out how to read and process 
   *   Can you get the list of movies for each actor, and the list of actors for each movie? How are these lists formatted?
   *   How many times does Kevin Bacon's nconst appear in the database files for actors? for movies?
 
-### 3. (10 pts)Create a GraphNode class for graph nodes and two sub classes- ActorNodes and MovieNodes
+### 3. (5 pts)Create a GraphNode class for graph nodes and two sub classes- ActorNodes and MovieNodes
   * Actor Nodes should contain zero or more Movie Node pointers and keep track of their nconst and any other data you see fit.
   * Movie Nodes should contain zero or more Actor Node pointers and keep track of their tconst and any other data you see fit.
   
-### 4. (20 pts) Create a Bi-Partite Graph class that stores ActorNodes and MovieNodes. 
+### 4. (3 pts) Create a Bi-Partite Graph class that stores ActorNodes and MovieNodes. 
 You should be able to add a Node to the graph by passing in some details about the node to be created, and have the Graph create either
 an Actor or Movie node as appropriate.
 
@@ -51,7 +51,7 @@ an Actor or Movie node as appropriate.
 * You will need to search and iterate through Actors to accomplish the Hollywood number query
 * Your most common query will most likely be from Kevin Bacon to another actor.
 
-### Required Methods: (15 pts)
+### Required Methods: (10 pts)
 ```java 
 public void addActor(<arguments for you to determine>)
 public void addMovie(<arguments for you to determine>)
@@ -59,12 +59,12 @@ private int BFS(String actor, String target) \\returns the degrees of separation
 public int calculateNumber(String actor) \\calculates the Bacon number of an actor using Breadth First Search
 public int calculateNumber(String actor, String targetActor) \\calculates the degrees of separation between the actor and targetActor using Breadth First Search
 ```
-### Challenge Methods:(5 pts each)
+### Challenge Methods:(2.5 pts each)
 ```java
 int calculateAvgBacon() \\calculates the average Bacon number across all actors
 int calculateAvgHollyWood(String actor) \\calculates the average degrees of separation between the actor and all other actors 
 ```
-### Optional Bonus Method: (up to 5 replacement points for other missed points)
+### Optional Bonus Method: (up to 2 replacement points for other missed points)
 ```java
 ArrayList<String> centralActors() \\Sorts actors by their Hollywood number and returns the top 10 lowest
 ```
