@@ -25,8 +25,8 @@ You will read in all actors and movies from the tsv files to populate the graphs
 You may want to calculate the last two values only once and save them in a cache (persistent data file)
 
 ## REQUIREMENTS:
-### 1. (5 pts) Download the appropriate TSV files. (Suggestion: DO NOT OPEN IN TEXT EDIT YIKES)
-### 2. (5 pts) Explore the format of the TSV files using terminal commands:
+### 1. (3 pts) Download the appropriate TSV files. (Suggestion: DO NOT OPEN IN TEXT EDIT YIKES)
+### 2. (2 pts) Explore the format of the TSV files using terminal commands:
 ```
 head -50 MYFIRSTTSV.tsv
 head -50 MYFIRSTTSV.tsv | grep -Eo "YOURREGEX"
@@ -51,12 +51,13 @@ an Actor or Movie node as appropriate.
 * You will need to search and iterate through Actors to accomplish the Hollywood number query
 * Your most common query will most likely be from Kevin Bacon to another actor.
 
-### Required Methods: (10 pts)
+### Required Methods: (15 pts)
 ```java 
-void addActor(<arguments for you to determine>)
-void addMovie(<arguments for you to determine>)
-int calculateNumber(String actor) \\calculates the Bacon number of an actor using Breadth First Search
-int calculateNumber(String actor, String targetActor) \\calculates the degrees of separation between the actor and targetActor using Breadth First Search
+public void addActor(<arguments for you to determine>)
+public void addMovie(<arguments for you to determine>)
+private int BFS(String actor, String target) \\returns the degrees of separation between actor and target
+public int calculateNumber(String actor) \\calculates the Bacon number of an actor using Breadth First Search
+public int calculateNumber(String actor, String targetActor) \\calculates the degrees of separation between the actor and targetActor using Breadth First Search
 ```
 ### Challenge Methods:(5 pts each)
 ```java
